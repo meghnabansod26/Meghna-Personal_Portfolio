@@ -1,0 +1,198 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+.about-me-parent {
+ 
+  height: 50%;
+}
+
+.about-me-card {
+  display: flex;
+  /* height: 500px;
+  width: 1200px; */
+  
+  background-color: #212640;
+  box-shadow: 0 0px 20px -2px #1f2235;
+}
+
+.about__content__servicesWrapper__innerContent {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  border-radius: 50%;
+  border: 1.5px solid var(--white);
+  background: radial-gradient(180px, var(--white), transparent 90%);
+  animation: rotation 10s linear 1s infinite;
+
+}
+
+.about-me-details {
+  width: 100%;
+  /* text-align: justify; */
+  padding: 50px 0 0 0;
+  color: aliceblue;
+  margin-left: 5px;
+}
+
+.about-me-description {
+  font-size: 13.5px;
+  color: aliceblue;
+}
+
+.about-me-highlights {
+  margin: 80px 0;
+}
+
+.highlight-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 15px 0;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 13.5px;
+}
+
+.highlight-blob {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px 0 0;
+  background-color: #286cf4;
+  border-radius: 50%;
+}
+
+/* .about-me-options .highlighted-btn {
+  margin: 0 0 0 28px;
+}
+
+.about-me-options .highlighted-btn:hover {
+  margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: #111;
+} */
+
+/* IPAD PRO RESPONSIVENESS */
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .about-me-profile {
+    display: none;
+  }
+  .about-me-details {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+}
+
+* {
+  /* box-sizing: border-box;
+  padding: 0;
+  margin: 0; */
+  scroll-behavior: smooth;
+}
+
+.about__content__servicesWrapper__innerContent {
+  width: 350px;
+  height: 350px;
+  margin: 30px 45px 0 30px;
+  position: relative;
+  border-radius: 50%;
+  border: 1.5px solid var(--white);
+  background: radial-gradient(180px, var(--dark-blue), transparent 90%);
+  animation: rotation 10s linear 1s infinite;
+}
+
+.about__content__servicesWrapper__innerContent div:nth-child(1) {
+  position: absolute;
+  top: -11%;
+  left: 41.5%;
+}
+
+.about__content__servicesWrapper__innerContent div:nth-child(2) {
+  position: absolute;
+  right: -8%;
+  top: 41.5%;
+}
+
+.about__content__servicesWrapper__innerContent div:nth-child(3) {
+  position: absolute;
+  bottom: -10%;
+  left: 41.5%;
+}
+
+.about__content__servicesWrapper__innerContent div:nth-child(4) {
+  position: absolute;
+  top: 41.5%;
+  left: -7%;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about__content__servicesWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about__content__servicesWrapper__innerContent {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(100px, var(--dark-blue), transparent 120%);
+  }
+
+  .about__content__servicesWrapper__innerContent div:nth-child(1) {
+    position: absolute;
+    top: -15%;
+    left: 38.5%;
+  }
+
+  .about__content__servicesWrapper__innerContent div:nth-child(2) {
+    position: absolute;
+    right: -11%;
+    top: 41%;
+  }
+
+  .about__content__servicesWrapper__innerContent div:nth-child(3) {
+    position: absolute;
+    bottom: -12%;
+    left: 39%;
+  }
+
+  .about__content__servicesWrapper__innerContent div:nth-child(4) {
+    position: absolute;
+    top: 41.5%;
+    left: -12%;
+  }
+}
