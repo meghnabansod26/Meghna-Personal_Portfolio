@@ -11,7 +11,7 @@ export const portfolioData = [
   {
     sectionId: 2,
     projectName: "Personal Portfolio",
-    projectLink: "https://meghna-personal-portfolio-5s7k.vercel.app/", //project link here based on you choice
+    projectLink: "https://meghna-personal-portfolio.vercel.app/", //project link here based on you choice
     image: ImageOne,
     technologies: ["React", "Node.js", "HTML5", "CSS3"],
 
