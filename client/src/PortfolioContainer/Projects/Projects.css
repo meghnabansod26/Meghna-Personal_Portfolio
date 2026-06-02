@@ -1,0 +1,132 @@
+
+
+.portfolio__content__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+  margin-top: 0px;
+  
+}
+
+
+
+.portfolio__content__cards__item {
+  height: 220px;
+  width: 100%;
+  max-width: 650px;
+  cursor: pointer;
+  position: relative;
+  border: solid #b8c4fb;
+  border-width: 0.5px; /* You can adjust the value (e.g., 1px, 3px, etc.) */
+
+
+}
+
+
+
+
+.portfolio__content__cards__item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio__content__cards__item__img-wrapper {
+  height: 100%;
+}
+
+.portfolio__content__cards__item__img-wrapper a {
+  height: 100%;
+}
+
+.portfolio__content__cards__item__img-wrapper a img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #212640;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay div {
+  text-align: center;
+}
+
+.overlay div p {
+  color: var(--white);
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  overflow: hidden;
+  animation: typingEffect 1s steps(30, end);
+  white-space: nowrap;
+}
+
+
+.overlay div button {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 8px 40px; /* Adjust the padding values according to your preference */
+  font-size: 1rem;
+  background: transparent;
+  color: var(--white);
+  /* border: 1.5px solid var(--white); */
+  border-radius: 4px;
+  font-weight: 450;
+  text-align: center;
+  background-color: #286cf4;
+  border-style: none;
+
+}
+.overlay div button:hover {
+  background-color: aliceblue;
+  color: black;
+  border: none;
+}
+.overlay div button:focus {
+  outline: none;
+  
+}
+.technologies{
+  padding-top: 20px;
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ 
+
+  .portfolio__content__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+ 
+
+  .portfolio__content__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__content__cards__item .overlay div p {
+    font-size: 2.5rem;
+  }
+}
