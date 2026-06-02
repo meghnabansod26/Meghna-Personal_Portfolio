@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from "react-icons/fa";
 
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 
@@ -76,21 +76,21 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Enthusiastic Dev 😎",
-                    1000,
-                    "Full stack Developer 💻",
-                    1000,
-                    "Mern stack Developer 📱",
-                    1000,
-                    "Angular Developer 🔴",
-                    1000,
-                    "Java Developer 🌐",
-                    1000,
-                  ]}
-                />
+               <TypeAnimation
+  sequence={[
+    "Enthusiastic Dev 😎",
+    1000,
+    "Full stack Developer 💻",
+    1000,
+    "Mern stack Developer 📱",
+    1000,
+    "Angular Developer 🔴",
+    1000,
+    "Java Developer 🌐",
+    1000,
+  ]}
+  repeat={Infinity}
+/>
               </h1>
             </span>
             <span className="profile-role-tagline">
