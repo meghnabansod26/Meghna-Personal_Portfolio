@@ -3,7 +3,6 @@ import {
   TOTAL_SCREENS,
   GET_SCREEN_INDEX,
 } from "../../../utilities/commonUtils";
-import { FaReact } from "react-icons/fa"; // Import the FaReact icon
 
 import ScrollService from "../../../utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";

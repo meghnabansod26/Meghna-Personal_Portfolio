@@ -6,8 +6,6 @@ import {
   FaCss3,
   FaAngular,
   FaJs,
-  FaDatabase, // Placeholder for MongoDB
-  FaNode, // Placeholder for Express.js
   FaBootstrap,
   FaGithub 
 } from "react-icons/fa";
@@ -46,7 +44,7 @@ const Projects = (props) => {
             className="portfolio__content__cards__item"
           >
             <div className="portfolio__content__cards__item__img-wrapper">
-              <a>
+              <a  href="#projects" >
                 <img src={item.image} alt="project " />
               </a>
             </div>

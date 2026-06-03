@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 const Footer=()=>{
     const customStyles = {
         backgroundColor: "#212640", // Replace with your custom color

@@ -26,7 +26,7 @@ let fadeInScreenHandler = (screen) => {
   return () => {
     fadeInSubscription.unsubscribe();
   };
-}, []);
+}, [fadeInScreenHandler]);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
