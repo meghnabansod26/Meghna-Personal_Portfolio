@@ -21,7 +21,7 @@ export const portfolioData = [
   {
     sectionId: 2,
     projectName: "Personal Portfolio",
-    projectLink: "https://meghna-portfolio.herokuapp.com/", //project link here based on you choice
+    projectLink: "https://meghna-personal-portfolio.vercel.app/", //project link here based on you choice
     image: ImageOne,
     technologies: ["React", "Node.js", "HTML5", "CSS3"],
 
@@ -30,7 +30,7 @@ export const portfolioData = [
   {
     sectionId: 2,
     projectName: "A Social Network App",
-    projectLink: "http://64.227.136.230", //project link here based on you choice
+    projectLink: "https://drive.google.com/file/d/1I_7DwdlgnpLkbT3relhwXfeLR7o5BLN8/view", //project link here based on you choice
     image: ImageTwo,
     technologies: ["React", "Next.js", "Node.js",  "MongoDB","Socket.io" ],
 
